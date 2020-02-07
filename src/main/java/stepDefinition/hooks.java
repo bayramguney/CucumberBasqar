@@ -6,6 +6,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
+import utilities.writeInExcel;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -52,8 +53,9 @@ public class hooks {
             }
         }
 
+        writeInExcel.excelWriteResults("results", "Sheet1",scenario);
 
-//        Driver.closeDriver();
+        Driver.closeDriver();
     }
 
 }
