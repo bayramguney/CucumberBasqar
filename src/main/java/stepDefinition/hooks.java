@@ -45,7 +45,6 @@ public class hooks {
 
             File destinationFile = new File("target/screenShots/"+featureFileName+dateinString+".png");
 
-
             try {
                 FileUtils.copyFile( srcFile, destinationFile );
             }catch(Exception e){

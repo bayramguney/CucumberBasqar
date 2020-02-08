@@ -5,6 +5,7 @@ import org.apache.poi.ss.usermodel.*;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 
 public class myExcel {
 
@@ -39,10 +40,16 @@ public class myExcel {
 //        Cell cell = row.getCell( 0 );
 //
 //        System.out.println(cell);
+//
+//        String result = readExcel.getData( "releaseNotes","ReleaseNotes" , "STUDENT",1 );
+//
+//        System.out.println(result);
 
-        String result = readExcel.getData( "releaseNotes","ReleaseNotes" , "STUDENT",1 );
+        List<String> myDatas = getMultipleDataInExcel.getData( "releaseNotes","ReleaseNotes");
 
-        System.out.println(result);
+        System.out.println(myDatas);
+
+
 
     }
 
